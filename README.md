@@ -7,7 +7,7 @@ executes a permitted update only after explicit approval in a follow-up
 message, then reads the result back. Prepared intents expire after ten
 minutes and cannot be replayed.
 
-This repository is the shared public distribution for Codex and Grok Build.
+This repository is the shared public distribution for Codex and Grok Build, with a Grok Bot candidate.
 It contains the plugin manifests, the hosted MCP connector config, and the
 canonical governed skill. It contains no second runtime and no second skill
 copy: every client uses the same production endpoint and the same workflow.
@@ -46,6 +46,18 @@ OAuth status by client:
 - Grok Build: MCP authorization behavior for this server has not been
   verified yet. Do not assume one-click OAuth works; verify sign-in and
   `list_organizations` before relying on it.
+
+## Grok Bot candidate
+
+Version 0.5.0 adds `plugins/trialstack-catalyst/.cursor-plugin/plugin.json`, using the [documented Cursor plugin format](https://cursor.com/docs/reference/plugins). It points to the same skill directory and `.mcp.json`; there is no additional runtime.
+
+Grok Bot is the persistent cloud agent product. Grok Build is the separate terminal coding agent. [Grok Bot supports Cursor plugins](https://x.ai/bot/guides/grok-bot-101), but compatibility of this specific package remains unverified.
+
+This plugin is **not published in Grok Bot's Marketplace**. The [official native connection flow](https://docs.x.ai/grok-bot/computer-and-apps) is Marketplace → choose a plugin → Add → authenticate → attach it with `@`. The GitHub repository and Grok Build commands do not install a native Grok Bot connector.
+
+Before claiming native support, verify Marketplace installation, TrialStack OAuth, and a read-only `list_organizations` request. Then select a returned organization and read its trials. Do not execute clinical changes as an installation smoke test.
+
+For package testing before publication, Cursor documents [local plugin loading](https://cursor.com/docs/plugins). Copy the complete nested plugin directory into its local plugin directory; do not copy only the manifest. A passing Cursor load validates packaging only, not Grok Bot authentication or runtime compatibility.
 
 ## Install in Grok Build
 

@@ -1,6 +1,6 @@
 ---
 name: trialstack-catalyst
-description: Use when a user asks Codex to select a TrialStack organization, inspect governed trial data, or prepare and explicitly approve a permitted TrialStack change through Catalyst MCP.
+description: Use when a user asks an agent to select a TrialStack organization, inspect governed trial data, or prepare and explicitly approve a permitted TrialStack change through Catalyst MCP.
 ---
 
 # TrialStack Catalyst
