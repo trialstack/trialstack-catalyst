@@ -1,0 +1,13 @@
+{
+  "name": "trialstack-catalyst",
+  "version": "0.5.0",
+  "description": "Discover, review, and safely change governed TrialStack data.",
+  "author": {
+    "name": "TrialStack"
+  },
+  "homepage": "https://www.trialstack.com/docs/catalyst/grok-bot/",
+  "repository": "https://github.com/trialstack/trialstack-catalyst",
+  "license": "MIT",
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json"
+}
