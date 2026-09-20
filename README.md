@@ -14,6 +14,8 @@ copy: every client uses the same production endpoint and the same workflow.
 
 ## Contents
 
+- `.cursor-plugin/marketplace.json` — Cursor/Grok Bot submission index pointing to the nested Catalyst plugin.
+
 - `plugins/trialstack-catalyst/.codex-plugin/plugin.json` — Codex plugin
   identity, starter prompts, and skill/MCP pointers.
 - `plugins/trialstack-catalyst/.grok-plugin/plugin.json` — Grok plugin
@@ -113,7 +115,7 @@ default.
 The plugin files (`plugins/…`, `.agents/plugins/marketplace.json`) remain
 canonical in the TrialStack monorepo and are synced here byte-identical with
 its `export-dist.sh` allowlisted export procedure. This repository owns only
-its root `README.md`, `LICENSE`, and `.grok-plugin/marketplace.json`.
+its root `README.md`, `LICENSE`, and the root Grok and Cursor marketplace indexes.
 
 ## License
 

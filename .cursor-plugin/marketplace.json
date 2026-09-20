@@ -1,0 +1,13 @@
+{
+  "name": "trialstack",
+  "owner": {
+    "name": "TrialStack"
+  },
+  "plugins": [
+    {
+      "name": "trialstack-catalyst",
+      "source": "plugins/trialstack-catalyst",
+      "description": "Discover, review, and safely change governed TrialStack data."
+    }
+  ]
+}
