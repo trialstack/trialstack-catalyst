@@ -1,0 +1,21 @@
+{
+  "name": "trialstack",
+  "description": "TrialStack plugin distribution: governed clinical trial work for teams and agents.",
+  "owner": {
+    "name": "TrialStack"
+  },
+  "plugins": [
+    {
+      "name": "trialstack-catalyst",
+      "description": "Governed TrialStack trial work for teams and agents: review trial data, prepare changes with a complete preview, and execute permitted updates only after explicit approval.",
+      "category": "productivity",
+      "source": {
+        "type": "local",
+        "path": "./plugins/trialstack-catalyst"
+      },
+      "homepage": "https://www.trialstack.com/docs/connections/catalyst-mcp/",
+      "keywords": ["trialstack", "trialstack catalyst", "catalyst mcp"],
+      "domains": ["trialstack.com", "api.trialstack.com", "www.trialstack.com"]
+    }
+  ]
+}

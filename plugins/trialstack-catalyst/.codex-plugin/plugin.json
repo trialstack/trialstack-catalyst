@@ -1,0 +1,33 @@
+{
+  "name": "trialstack-catalyst",
+  "version": "0.4.0",
+  "description": "Discover, review, and safely change governed TrialStack data.",
+  "author": {
+    "name": "TrialStack",
+    "url": "https://www.trialstack.com"
+  },
+  "homepage": "https://www.trialstack.com/docs/connections/catalyst-mcp/",
+  "keywords": ["clinical-trials", "mcp", "research", "trialstack"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "TrialStack Catalyst",
+    "shortDescription": "Governed trial work for teams and agents.",
+    "longDescription": "Connect Codex to TrialStack Catalyst to discover and review governed trial data, prepare protocol and document changes, and execute permitted updates only after explicit approval.",
+    "developerName": "TrialStack",
+    "category": "Business & Operations",
+    "capabilities": ["Interactive", "Read", "Write"],
+    "websiteURL": "https://www.trialstack.com/products/catalyst/",
+    "privacyPolicyURL": "https://www.trialstack.com/docs/legal/privacy-policy/",
+    "termsOfServiceURL": "https://www.trialstack.com/docs/legal/terms-of-service/",
+    "brandColor": "#22B49C",
+    "defaultPrompt": [
+      "Show the TrialStack organizations I can access, then use the one I choose.",
+      "Review this TrialStack trial and cite the record identifiers you use. Do not make changes.",
+      "Prepare this governed TrialStack change and show the complete preview. Do not execute it."
+    ],
+    "composerIcon": "./assets/catalyst-icon.svg",
+    "logo": "./assets/catalyst-icon.svg",
+    "screenshots": []
+  },
+  "mcpServers": "./.mcp.json"
+}

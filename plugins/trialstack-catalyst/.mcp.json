@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "trialstack-catalyst": {
+      "type": "http",
+      "url": "https://api.trialstack.com/mcp",
+      "oauth_resource": "https://api.trialstack.com/mcp"
+    }
+  }
+}

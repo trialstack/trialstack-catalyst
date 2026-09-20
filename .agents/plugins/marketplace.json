@@ -1,0 +1,20 @@
+{
+  "name": "trialstack",
+  "interface": {
+    "displayName": "TrialStack"
+  },
+  "plugins": [
+    {
+      "name": "trialstack-catalyst",
+      "source": {
+        "source": "local",
+        "path": "./plugins/trialstack-catalyst"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
